@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Images/Group 1171275321.png" type="image/x-icon">
+    <!-- Google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Configurations -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: "'Manrope', sans-serif"
+                    },
+                    colors: {
+                        primary: '#FF4240',
+                        secondary: '#131318',
+                        natural: '#13131899'
+                    },
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '1rem',
+                        md: '1.5rem',
+                        lg: '0',
+                        // xl: '5rem',
+                        // '2xl': '6rem',
+                    },
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base{
+            h1,h2,h3,h4{
+                @apply text-secondary;
+            }
+            h1{
+               @apply text-4xl font-extrabold;
+            }
+            p{
+                @apply text-neutral leading-7;
+            }
+
+        }
+        @layer components{
+            .btn-primary{
+                @apply btn bg-primary text-white text-xl font-bold rounded-md px-6 py-3 border-none;
+            }
+        }
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="container max-w-[1280px]">
+    <header></header>
+    <main class=""></main>
+    <footer></footer>
+</body>
+
+</html>
