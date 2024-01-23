@@ -12,9 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind css and daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Tailwind CSS Configurations -->
     <script>
         tailwind.config = {
@@ -35,7 +40,7 @@
                         DEFAULT: '1rem',
                         sm: '1rem',
                         md: '1.5rem',
-                        lg: '0',
+                        // lg: '0',
                         // xl: '5rem',
                         // '2xl': '6rem',
                     },
@@ -43,33 +48,75 @@
             }
         }
     </script>
-    <style type="text/tailwindcss">
-        @layer base{
-            h1,h2,h3,h4{
-                @apply text-secondary;
-            }
-            h1{
-               @apply text-4xl font-extrabold;
-            }
-            p{
-                @apply text-neutral leading-7;
-            }
-
-        }
-        @layer components{
-            .btn-primary{
-                @apply btn bg-primary text-white text-xl font-bold rounded-md px-6 py-3 border-none;
-            }
-        }
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
 </head>
 
-<body class="container max-w-[1280px]">
-    <header></header>
-    <main class=""></main>
+<body class="container max-w-[1280px] font-manrope">
+    <header class="">
+        <!-- Navigation section -->
+        <nav class="drawer my-4 lg:my-5">
+            <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content flex flex-col">
+                <!-- Navbar -->
+                <div class="w-full navbar bg-base-100 justify-between md:px-0">
+                    <div class="flex-none lg:hidden">
+                        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-6 h-6 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl text-secondary font-extrabold">Hockey <span
+                            class="text-primary">’</span>s</h2>
+                    <div class="flex-none hidden lg:block">
+                        <ul
+                            class="menu menu-horizontal [&>*]:font-bold [&>*]:text-natural hover:[&>*]:bg-secondary hover:[&>*]:text-white hover:[&>*]:rounded-md duration-0">
+                            <!-- Navbar menu content here -->
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Page</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-x-5">
+                        <img src="./Images/search-icon.svg" alt="" class="hidden md:block">
+                        <button class="btn bg-primary border-none text-lg
+                        text-white font-semibold hover:bg-primary">Get
+                            Ticket</button>
+                    </div>
+                </div>
+                <!-- Page content here -->
+                <!-- Content -->
+            </div>
+            <div class="drawer-side z-10">
+                <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+                <ul
+                    class="menu p-4 min-h-full bg-base-200 font-bold [&>*]:text-natural hover:[&>*]:bg-secondary hover:[&>*]:text-white hover:[&>*]:rounded-md duration-0 w-4/5 max-w-[350px]">
+                    <!-- Sidebar content here -->
+                    <li class="mb-6 md:hidden">
+                        <form action="#"
+                            class="bg-white border-[2px] border-gray-300 text-title py-2 pr-4 rounded-3xl lg:flex justify-between">
+                            <input type="search" name="search" id="search" placeholder="Search here"
+                                class="w-full h-full pl-2 pr-2 focus:outline-none rounded-l-3xl" required>
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass text-title"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Page</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+
+    </main>
     <footer></footer>
 </body>
 
