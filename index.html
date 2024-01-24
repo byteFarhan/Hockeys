@@ -115,19 +115,19 @@
             </div>
         </nav>
         <!-- Banner or Carousel section -->
-        <section id="banner relative">
+        <section id="banner">
             <div class="carousel w-full max-h-[550px] rounded-xl">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full object-cover" />
                     <div
                         class="absolute flex lg:gap-5 justify-between transform top-1/2 lg:transform-none left-5 right-5 -translate-y-1/2 lg:left-10 lg:bottom-10 lg:justify-start lg:top-auto">
-                        <a href="#slide3"
+                        <a href="#slide4"
                             class="btn btn-circle h-5 lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❮</a>
                         <a href="#slide2"
                             class="btn btn-circle h-5lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❯</a>
                     </div>
-                    <!-- <div
-                        class="bg-secondary text-white space-y-2 p-5 rounded-lg absolute lg:right-5 lg:bottom-5 -bottom-20 w-full lg:w-3/6 mt-5">
+                    <div
+                        class="hidden lg:block bg-secondary text-white space-y-2 p-5 rounded-lg absolute lg:right-8 lg:bottom-8 w-full lg:w-3/6">
                         <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
                         <p class="text-sm md:text-baseleading-8 font-medium">Dit amet consectetur.
                             Condimentum
@@ -136,7 +136,7 @@
                             turpis
                             placerat dolor. Purus urna in
                             sit nullam proin. </p>
-                    </div> -->
+                    </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="./Images/banner2.jpg" class="w-full object-cover" />
@@ -146,6 +146,17 @@
                             class="btn btn-circle h-5 lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❮</a>
                         <a href="#slide3"
                             class="btn btn-circle h-5lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❯</a>
+                    </div>
+                    <div
+                        class="hidden lg:block bg-secondary text-white space-y-2 p-5 rounded-lg absolute lg:right-8 lg:bottom-8 w-full lg:w-3/6">
+                        <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
+                        <p class="text-sm md:text-baseleading-8 font-medium">Dit amet consectetur.
+                            Condimentum
+                            dignissim
+                            adipiscing aliquam
+                            turpis
+                            placerat dolor. Purus urna in
+                            sit nullam proin. </p>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
@@ -157,6 +168,17 @@
                         <a href="#slide4"
                             class="btn btn-circle h-5lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❯</a>
                     </div>
+                    <div
+                        class="hidden lg:block bg-secondary text-white space-y-2 p-5 rounded-lg absolute lg:right-8 lg:bottom-8 w-full lg:w-3/6">
+                        <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
+                        <p class="text-sm md:text-baseleading-8 font-medium">Dit amet consectetur.
+                            Condimentum
+                            dignissim
+                            adipiscing aliquam
+                            turpis
+                            placerat dolor. Purus urna in
+                            sit nullam proin. </p>
+                    </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <img src="./Images/banner44.jpg" class="w-full object-cover" />
@@ -167,19 +189,28 @@
                         <a href="#slide1"
                             class="btn btn-circle h-5lg:px-6 rounded-full bg-secondary border-none hover:bg-primary transition-all duration-100 text-white">❯</a>
                     </div>
+                    <div
+                        class="hidden lg:block bg-secondary text-white space-y-2 p-5 rounded-lg absolute lg:right-8 lg:bottom-8 w-full lg:w-3/6">
+                        <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
+                        <p class="text-sm md:text-baseleading-8 font-medium">Dit amet consectetur.
+                            Condimentum
+                            dignissim
+                            adipiscing aliquam
+                            turpis
+                            placerat dolor. Purus urna in
+                            sit nullam proin. </p>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="w-full lg:w-2/5 lg:absolute right-0 bottom-0">
-                <div class="bg-secondary text-white space-y-2 p-5 rounded-lg">
-                    <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
-                    <p class="text-sm md:text-baseleading-8 font-medium text-justify">Dit amet consectetur. Condimentum
-                        dignissim
-                        adipiscing aliquam
-                        turpis
-                        placerat dolor. Purus urna in
-                        sit nullam proin. </p>
-                </div>
-            </div> -->
+            <div class="bg-secondary text-white space-y-2 p-5 rounded-lg lg:hidden">
+                <h5 class=" text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h5>
+                <p class="text-sm md:text-baseleading-8 font-medium">Dit amet consectetur. Condimentum
+                    dignissim
+                    adipiscing aliquam
+                    turpis
+                    placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
         </section>
     </header>
     <main class="">
@@ -199,25 +230,29 @@
             </div>
             <div class="flex flex-col lg:flex-row items-center md:justify-between gap-6 lg:gap-0">
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress border-primary" style="--value:87;" role="progressbar">87%</div>
+                    <div class="radial-progress text-lg text-primary font-extrabold" style="--value:87;"
+                        role="progressbar"><span class="text-secondary">87%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress border-primary" style="--value:95;" role="progressbar">95%</div>
+                    <div class="radial-progress text-[#49D293] text-lg font-extrabold" style="--value:95;"
+                        role="progressbar"><span class="text-secondary">95%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Experienced Coach</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress border-primary" style="--value:90;" role="progressbar">90%</div>
+                    <div class="radial-progress text-lg text-orange-400 font-extrabold" style="--value:90;"
+                        role="progressbar"><span class="text-secondary">90%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Senior Player</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress border-primary" style="--value:80;" role="progressbar">80%</div>
+                    <div class="radial-progress text-lg text-[#4C8DF1] font-extrabold" style="--value:80;"
+                        role="progressbar"><span class="text-secondary">80%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Training Ground</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
@@ -593,6 +628,7 @@
                         <h6 class="text-lg font-extrabold text-secondary mt-1">152/1 Mohakhali Wireless Gate</h6>
                     </div>
                 </div>
+                <!-- from section -->
                 <div class="col-auto lg:col-span-2">
                     <form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div class="form-control">
@@ -604,24 +640,24 @@
                         </div>
                         <div class="form-control">
                             <label class="label">
-                                <span class="label-text text-xl font-bold text-secondary">Your Name</span>
+                                <span class="label-text text-xl font-bold text-secondary">Your Email</span>
                             </label>
-                            <input type="text" id="name" placeholder="Enter your full name" class="input bg-[#13131808]"
+                            <input type="email" id="email" placeholder="Enter your email" class="input bg-[#13131808]"
                                 required />
                         </div>
                         <div class="form-control">
                             <label class="label">
-                                <span class="label-text text-xl font-bold text-secondary">Your Name</span>
+                                <span class="label-text text-xl font-bold text-secondary">Subject</span>
                             </label>
-                            <input type="text" id="name" placeholder="Enter your full name" class="input bg-[#13131808]"
-                                required />
+                            <input type="text" id="subject" placeholder="Enter your subject"
+                                class="input bg-[#13131808]" required />
                         </div>
                         <div class="form-control">
                             <label class="label">
-                                <span class="label-text text-xl font-bold text-secondary">Your Name</span>
+                                <span class="label-text text-xl font-bold text-secondary">Phone Number</span>
                             </label>
-                            <input type="text" id="name" placeholder="Enter your full name" class="input bg-[#13131808]"
-                                required />
+                            <input type="number" id="phone" placeholder="Enter your phone number"
+                                class="input bg-[#13131808]" required />
                         </div>
                         <div class="form-control md:col-span-2">
                             <label class="label">
