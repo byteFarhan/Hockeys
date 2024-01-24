@@ -51,8 +51,8 @@
     </script>
 </head>
 
-<body class="container max-w-[1280px] font-manrope">
-    <header class="">
+<body class="font-manrope">
+    <header class="max-w-[1280px] container">
         <!-- Navigation section -->
         <nav class="drawer my-4 lg:my-5">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -213,7 +213,7 @@
             </div>
         </section>
     </header>
-    <main class="">
+    <main class="max-w-[1280px] container">
         <!-- Professional Hockeys Club section -->
         <section class="my-24">
             <div class="text-center space-y-6 py-8 border-y-2 border-dashed border-light-gray mb-12">
@@ -230,28 +230,29 @@
             </div>
             <div class="flex flex-col lg:flex-row items-center md:justify-between gap-6 lg:gap-0">
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress text-lg text-primary font-extrabold" style="--value:87;"
+                    <div class="radial-progress text-2xl text-primary font-extrabold" style="--value:87; --size:8rem;"
                         role="progressbar"><span class="text-secondary">87%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress text-[#49D293] text-lg font-extrabold" style="--value:95;"
+                    <div class="radial-progress text-[#49D293] text-2xl font-extrabold" style="--value:95; --size:8rem;"
                         role="progressbar"><span class="text-secondary">95%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Experienced Coach</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress text-lg text-orange-400 font-extrabold" style="--value:90;"
-                        role="progressbar"><span class="text-secondary">90%</span></div>
+                    <div class="radial-progress text-2xl text-orange-400 font-extrabold"
+                        style="--value:90; --size:8rem;" role="progressbar"><span class="text-secondary">90%</span>
+                    </div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Senior Player</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div class="radial-progress text-lg text-[#4C8DF1] font-extrabold" style="--value:80;"
+                    <div class="radial-progress text-2xl text-[#4C8DF1] font-extrabold" style="--value:80; --size:8rem;"
                         role="progressbar"><span class="text-secondary">80%</span></div>
                     <h5 class="text-secondary text-xl font-semibold mt-6 mb-4">Training Ground</h5>
                     <p class="text-natural leading-8 text-center">Amet consectetur. Condimentum dignissim adipiscing .
@@ -274,37 +275,47 @@
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <div
-                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/2.png')] bg-cover bg-center rounded-lg space-y-4 p-10 lg:col-span-2 lg:min-h-[340px]">
-                    <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
-                    <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
-                        consectetur. Ut urna diam quis
-                        sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn bg-primary border-none text-lg
+                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/2.png')] bg-cover bg-center rounded-lg  p-10 lg:col-span-2 lg:min-h-[340px] flex items-end">
+                    <div class="space-y-4">
+                        <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
+                        <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
+                            consectetur. Ut urna diam quis
+                            sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue
+                            sed et in.</p>
+                        <button class="btn bg-primary border-none text-lg
                         text-white font-semibold hover:bg-primary">Register Now!</button>
+                    </div>
+
                 </div>
                 <div
-                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/3.png')] bg-cover bg-center rounded-lg space-y-4 p-10 lg:col-span-2 lg:min-h-[340px]">
-                    <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
-                    <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
-                        consectetur. Ut urna diam quis
-                        sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn bg-primary border-none text-lg
+                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/3.png')] bg-cover bg-center rounded-lg space-y-4 p-10 lg:col-span-2 lg:min-h-[340px] flex items-end">
+                    <div class="space-y-4">
+                        <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
+                        <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
+                            consectetur. Ut urna diam quis
+                            sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue
+                            sed et in.</p>
+                        <button class="btn bg-primary border-none text-lg
                         text-white font-semibold hover:bg-primary">Register Now!</button>
+                    </div>
                 </div>
                 <div
-                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/4.png')] bg-cover bg-center rounded-lg space-y-4 p-10 lg:col-span-4 lg:min-h-[450px]">
-                    <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
-                    <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
-                        consectetur. Ut urna diam quis
-                        sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn bg-primary border-none text-lg
+                    class="bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./Images/4.png')] bg-cover bg-center rounded-lg space-y-4 p-5 md:p-10 lg:col-span-4 lg:min-h-[450px] flex items-end">
+                    <div class="space-y-4">
+                        <h4 class="text-white text-xl md:text-2xl lg:text-[28px] font-extrabold">Junior Program</h4>
+                        <p class="font-medium text-white text-sm md:text-base leading-8">Dolor sit amet
+                            consectetur. Ut urna diam quis
+                            sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue
+                            sed et in.</p>
+                        <button class="btn bg-primary border-none text-lg
                         text-white font-semibold hover:bg-primary">Register Now!</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -691,7 +702,57 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="bg-secondary py-16 lg:py-24 text-[#ffffff99]">
+        <div class="max-w-[1280px] container grid grid-cols-2 md:grid-cols-1 lg:grid-cols-5 gap-6 justify-items-center">
+            <div class="space-y-4 col-span-2 md:col-auto lg:col-span-2 mb-4 lg:mb-0">
+                <h3 class="text-[28px] font-extrabold text-white text-center lg:text-left">Get In Touch</h3>
+                <p class="w-2/3 mx-auto lg:mx-0 md:w-1/2 lg:w-2/3 leading-7 text-center lg:text-left">Dit amet
+                    consectetur. Condimentum
+                    adipiscing aliquam turpis
+                    placerat dolor.
+                    Purus urna
+                    in sit nullam
+                    proin. </p>
+                <span class="flex justify-center lg:justify-start items-center gap-3">
+                    <p class="text-primary"> <i class="fa-regular fa-envelope"></i></p>
+                    <p class="text-[#ffffffcc]">hockeys@support.com</p>
+                </span>
+                <span class="flex justify-center lg:justify-start items-center gap-3">
+                    <p class="text-primary"><i class="fa-solid fa-phone"></i></p>
+                    <p class="text-[#ffffffcc]">(+62) 123-321-543</p>
+                </span>
+            </div>
+            <nav class="text-center lg:text-left">
+                <header class="text-lg font-bold text-white">Company</header>
+                <div class="flex flex-col gap-3 mt-5">
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Leadership</a>
+                    <a class="link link-hover">Careers</a>
+                    <a class="link link-hover">News & Article</a>
+                    <a class="link link-hover">Legal Notice</a>
+                </div>
+            </nav>
+            <nav class="text-center lg:text-left">
+                <header class="text-lg font-bold text-white">Support</header>
+                <div class="flex flex-col gap-3 mt-5">
+                    <a class="link link-hover">Help Center</a>
+                    <a class="link link-hover">FAQ</a>
+                    <a class="link link-hover">Ticket Support</a>
+                    <a class="link link-hover">Contact Us</a>
+                </div>
+            </nav>
+            <nav class="col-span-2  md:col-span-1 text-center lg:text-left">
+                <header class="text-lg font-bold text-white">Services</header>
+                <div class="flex flex-col gap-3 mt-5">
+                    <a class="link link-hover">Academy</a>
+                    <a class="link link-hover">Group Lesson</a>
+                    <a class="link link-hover">Private Lesson</a>
+                    <a class="link link-hover">Hockeys for kids</a>
+                    <a class="link link-hover">Hockeys for Adult</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
